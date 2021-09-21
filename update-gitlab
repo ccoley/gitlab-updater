@@ -3,6 +3,8 @@
 # This tool upgrades GitLab Omnibus to the most recent patch version of the
 # previous minor version. GitLab maintains security fixes for the 3 most recent
 # minor versions, but the latest minor version frequently has regressions.
+#
+# See https://git.codingallnight.com/chris/gitlab-updater for latest version
 
 program_name=$(basename "$0")
 package='gitlab-ce'

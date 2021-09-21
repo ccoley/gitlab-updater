@@ -37,7 +37,7 @@ APT cache is stale; updating...
 Would upgrade from 10.0.7-ce.0 to 10.1.2-ce.0
 ```
 
-### Making Tool Globally Executable
+## Making Tool Globally Executable
 
 The tool can be made available to multiple users by deploying it to the `/usr/local/bin/` directory on your server.
 
