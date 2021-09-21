@@ -1,4 +1,4 @@
-# Gitlab Updater
+# [Gitlab Updater](https://git.codingallnight.com/chris/gitlab-updater)
 
 This tool upgrades GitLab Omnibus to the most recent patch version of the previous minor version. GitLab maintains security fixes for the 3 most recent minor versions, but the latest minor version frequently has regressions.
 
@@ -35,6 +35,21 @@ $ sudo gitlab-updater/update-gitlab -d
 APT cache is stale; updating...
 
 Would upgrade from 10.0.7-ce.0 to 10.1.2-ce.0
+```
+
+### Making Tool Globally Executable
+
+The tool can be made available to multiple users by deploying it to the `/usr/local/bin/` directory on your server.
+
+```sh
+$ sudo mv gitlab-updater/update-gitlab /usr/local/bin/update-gitlab
+$ sudo chmod +x /usr/local/bin/update-gitlab
+```
+
+You can also create a symlink to make the tool executable under multiple names.
+
+```sh
+$ ln -s /usr/local/bin/update-gitlab /usr/local/bin/gitlab-update
 ```
 
 
